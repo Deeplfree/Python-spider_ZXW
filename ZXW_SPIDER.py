@@ -4,7 +4,7 @@ from lxml import etree
 page = 0
 i = 0
 j = 0
-file = open('知行网所有提问{}.csv'.format('2'),'w',newline = '',encoding='utf-8')
+file = open('result{}.csv'.format('2'),'w',newline = '',encoding='utf-8')
 
 for i in range(1,2):
     page = range(0,43211,10)
@@ -24,7 +24,7 @@ for i in range(1,2):
     for key in formdata:
         formdata[key] = formdata[key].encode('utf-8')
 
-    url = 'http://zhixing.xaut.edu.cn/lyhfmore.jsp?urltype=tree.TreeTempUrl&wbtreeid=11038'
+    url = '************************************************'
     res = requests.post(url , data = formdata)
 ##    print(res)
 
